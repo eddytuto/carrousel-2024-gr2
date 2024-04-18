@@ -31,10 +31,9 @@ function genere_html(){
     
        $contenu = '<button class="bouton__ouvrir">Ouvrir</button>
        <div class="carrousel">
-       <button class="carrousel__x">X</button>
-       <figure class="carrousel__figure"></figure>
-       <form class="carrousel__form"></form>
+        <button class="carrousel__x">X</button>
+        <figure class="carrousel__figure"></figure>
        </div>';
        return $contenu;
    }
-   add_shortcode('mon_html', 'genere_html');
+   add_shortcode('carrousel', 'genere_html');
