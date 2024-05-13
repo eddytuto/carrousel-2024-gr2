@@ -24,6 +24,14 @@ true); /// true permet d'ajouter le script à la fin du document
 }
 
 add_action('wp_enqueue_scripts', 'eddym_enqueue');
+/* IMPORTANT
+Dans header.php
+wp_header() juste avant la balise fermeture </head>
+
+Dans footer.php
+wp_footer() juste avant la balise fermeture </body>
+
+*/
 
 function genere_html(){
     /////////////////////////////////////// HTML
@@ -33,6 +41,8 @@ function genere_html(){
        <div class="carrousel">
         <button class="carrousel__x">X</button>
         <figure class="carrousel__figure"></figure>
+        <form class="carrousel__form"></form>
+        
        </div>';
        return $contenu;
    }
