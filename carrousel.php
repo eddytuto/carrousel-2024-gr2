@@ -24,6 +24,14 @@ true); /// true permet d'ajouter le script à la fin du document
 }
 
 add_action('wp_enqueue_scripts', 'eddym_enqueue');
+/* IMPORTANT
+Dans header.php
+wp_header() juste avant la balise fermeture </head>
+
+Dans footer.php
+wp_footer() juste avant la balise fermeture </body>
+
+*/
 
 function genere_html(){
     /////////////////////////////////////// HTML
