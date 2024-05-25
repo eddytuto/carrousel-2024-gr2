@@ -1,4 +1,5 @@
 (function(){
+
     // console.log('début du carrousel')
     let carrousel = document.querySelector(".carrousel")
     // console.log("carrousel = " + carrousel.tagName)
@@ -67,5 +68,6 @@ function creer_radio_carrousel(index){
         console.log("bouton mousedown ")
         carrousel.classList.remove('carrousel--ouvrir')
     })
+
 
 })()
